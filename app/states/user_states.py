@@ -3,8 +3,13 @@ from aiogram.fsm.state import State, StatesGroup
 
 class RegStates(StatesGroup):
     name = State()
-    social_type = State()
+    profession = State()
     subjects = State()
+    finish = State()
+
+
+class StudentMenuState(StatesGroup):
+    menu = State()
 
 
 class SupportStates(StatesGroup):
